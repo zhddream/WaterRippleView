@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         waterRippleView = findViewById(R.id.wrv_water);
         textView = findViewById(R.id.click);
     }
