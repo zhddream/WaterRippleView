@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="AutoButton">
+        <!-- 设置top图片的宽度 -->
+        <attr name="autoDrawableTopWidth" format="dimension" />
+        <!-- 设置top图片的高度 -->
+        <attr name="autoDrawableTopHeight" format="dimension" />
+        <attr name="autoDrawableBottomWidth" format="dimension" />
+        <attr name="autoDrawableBottomHeight" format="dimension" />
+        <attr name="autoDrawableRightWidth" format="dimension" />
+        <attr name="autoDrawableRightHeight" format="dimension" />
+        <attr name="autoDrawableLeftWidth" format="dimension" />
+        <attr name="autoDrawableLeftHeight" format="dimension" />
+        <!-- 设置top的图片资源 -->
+        <attr name="autoDrawableTop" format="reference" />
+        <attr name="autoDrawableBottom" format="reference" />
+        <attr name="autoDrawableRight" format="reference" />
+        <attr name="autoDrawableLeft" format="reference" />
+        <!--设置字体的大小-->
+        <attr name="autoButtonTextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="AutoRadioButton">
+        <!-- 设置top图片的宽度 -->
+        <attr name="autoRadioDrawableTopWidth" format="dimension" />
+        <!-- 设置top图片的高度 -->
+        <attr name="autoRadioDrawableTopHeight" format="dimension" />
+        <attr name="autoRadioDrawableBottomWidth" format="dimension" />
+        <attr name="autoRadioDrawableBottomHeight" format="dimension" />
+        <attr name="autoRadioDrawableRightWidth" format="dimension" />
+        <attr name="autoRadioDrawableRightHeight" format="dimension" />
+        <attr name="autoRadioDrawableLeftWidth" format="dimension" />
+        <attr name="autoRadioDrawableLeftHeight" format="dimension" />
+        <!-- 设置top的图片资源 -->
+        <attr name="autoRadioDrawableTop" format="reference" />
+        <attr name="autoRadioDrawableBottom" format="reference" />
+        <attr name="autoRadioDrawableRight" format="reference" />
+        <attr name="autoRadioDrawableLeft" format="reference" />
+        <!--设置字体的大小-->
+        <attr name="autoRadioButtonTextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="AutoTextView">
+        <!-- 设置top图片的宽度 -->
+        <attr name="autoTvDrawableTopWidth" format="dimension" />
+        <!-- 设置top图片的高度 -->
+        <attr name="autoTvDrawableTopHeight" format="dimension" />
+        <attr name="autoTvDrawableBottomWidth" format="dimension" />
+        <attr name="autoTvDrawableBottomHeight" format="dimension" />
+        <attr name="autoTvDrawableRightWidth" format="dimension" />
+        <attr name="autoTvDrawableRightHeight" format="dimension" />
+        <attr name="autoTvDrawableLeftWidth" format="dimension" />
+        <attr name="autoTvDrawableLeftHeight" format="dimension" />
+        <!-- 设置top的图片资源 -->
+        <attr name="autoTvDrawableTop" format="reference" />
+        <attr name="autoTvDrawableBottom" format="reference" />
+        <attr name="autoTvDrawableRight" format="reference" />
+        <attr name="autoTvDrawableLeft" format="reference" />
+        <!--设置字体的大小-->
+        <attr name="autoTvTextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="AutoClearEditText">
+        <attr name="clearEtContentHeight" format="dimension" />
+        <attr name="clearEtContentColor" format="color" />
+        <attr name="clearEtHint" format="string" />
+        <!--文字的颜色-->
+        <attr name="clearEtTvColor" format="color" />
+        <attr name="clearEtSize" format="dimension" />
+        <attr name="clearEtInputType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="number" value="1" />
+            <enum name="textPassword" value="2" />
+            <enum name="numberPassword" value="3" />
+        </attr>
+    </declare-styleable>
+    <!--自定义ImageView的属性 Auto 可以实现圆角、圆、正常的ImageView-->
+    <declare-styleable name="AutoImageView">
+        <attr name="autoBorderColor" format="color" />
+        <attr name="autoBorderidth" format="dimension" />
+        <attr name="autoPressAlpha" format="integer" />
+        <attr name="autoPressColor" format="color" />
+        <attr name="autoRadius" format="dimension" />
+        <attr name="autoShapeType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="round" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+    </declare-styleable>
+    <!--五星-->
+    <declare-styleable name="AutoRatingBar" tools:ignore="ResourceName">
+        <attr name="starImageSize" format="dimension" />
+        <attr name="starImageWidth" format="dimension" />
+        <attr name="starImageHeight" format="dimension" />
+        <attr name="starImagePadding" format="dimension" />
+        <attr name="starImageLeftMargin" format="dimension" />
+        <attr name="starImageRightMargin" format="dimension" />
+        <attr name="starImageTopMargin" format="dimension" />
+        <attr name="starImageBottomMargin" format="dimension" />
+        <attr name="starCount" format="integer" />
+        <attr name="starNum" format="integer" />
+        <attr name="starEmpty" format="reference" />
+        <attr name="starFill" format="reference" />
+        <attr name="starHalf" format="reference" />
+        <attr name="clickable" format="boolean" />
+        <attr name="halfstart" format="boolean" />
+    </declare-styleable>
+    <!--点赞的列表-->
+    <declare-styleable name="AutoApproveList">
+        <attr name="pic_count" format="integer" />
+        <attr name="pic_size" format="dimension" />
+        <attr name="pic_offset" format="float" />
+    </declare-styleable>
+    <!--九宫格显示控件-->
+    <declare-styleable name="NineGridImageView">
+        <attr name="singleImgSize" format="dimension" />
+        <attr name="imgGap" format="dimension" />
+        <attr name="maxSize" format="integer" />
+        <attr name="showStyle" format="enum">
+            <enum name="grid" value="0" />
+            <enum name="fill" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--文字过多显示 “显示更多”-->
+    <declare-styleable name="AutoReaderMoreTextView">
+        <attr name="trimExpandedText" format="string" />
+        <attr name="trimCollapsedText" format="string" />
+        <attr name="trimLength" format="integer" />
+        <attr name="showTrimExpandedText" format="boolean" />
+        <attr name="colorClickableText" format="color" />
+        <attr name="trimLines" format="integer" />
+        <attr name="trimMode">
+            <enum name="trimModeLine" value="0" />
+            <enum name="trimModeLength" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--获取验证码的组件-->
+    <declare-styleable name="AutoVerfiyEditText">
+        <attr name="verfiyEtContentHeight" format="dimension" />
+        <attr name="verfiyEtContentColor" format="color" />
+        <attr name="verfiyEtHint" format="string" />
+        <!--文字的颜色-->
+        <attr name="verfiyEtTvColor" format="color" />
+        <attr name="verfiyEtSize" format="dimension" />
+        <attr name="verfiyEtInputType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="number" value="1" />
+            <enum name="textPassword" value="2" />
+            <enum name="numberPassword" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ColumnView">
+        <attr name="headHeight" format="dimension" />
+        <attr name="maxHeadHeight" format="dimension" />
+        <attr name="footHeight" format="dimension" />
+        <attr name="maxFootHeight" format="dimension" />
+        <attr name="enableToPullDown" format="boolean" />
+        <attr name="enableToPullUp" format="boolean" />
+        <attr name="enableOverScroll" format="boolean" />
+        <attr name="overScrollHeight" format="dimension" />
+    </declare-styleable>
+
+    <!--七牛的自定义控件录制视频的进度条-->
+    <declare-styleable name="SectionProgressBar">
+        <attr name="minSeconds" format="integer" />
+        <attr name="maxSeconds" format="integer" />
+    </declare-styleable>
+
+    <!--ImagePicker选择图片-->
+    <declare-styleable name="CropImageView">
+        <attr name="cropMaskColor" format="color" />
+        <attr name="cropBorderColor" format="color" />
+        <attr name="cropBorderWidth" format="dimension" />
+        <attr name="cropFocusWidth" format="dimension" />
+        <attr name="cropFocusHeight" format="dimension" />
+        <attr name="cropStyle" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="circle" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SwipeDeleteGroupLayout">
+        <attr name="swipeEnable" format="boolean" />
+        <attr name="ios" format="boolean" />
+        <attr name="leftSwipe" format="boolean" />
+    </declare-styleable>
+
+    <!--滑轮控件-->
+    <declare-styleable name="LoopView">
+        <attr name="awv_textsize" format="integer" />
+        <attr name="awv_lineSpace" format="float" />
+        <attr name="awv_centerTextColor" format="integer" />
+        <attr name="awv_outerTextColor" format="integer" />
+        <attr name="awv_dividerTextColor" format="integer" />
+        <attr name="awv_itemsVisibleCount" format="integer" />
+        <attr name="awv_isLoop" format="boolean" />
+        <attr name="awv_initialPosition" format="integer" />
+        <attr name="awv_scaleX" format="float" />
+    </declare-styleable>
+
+    <!-- 水波纹扩散效果 -->
+    <declare-styleable name="WaterRippleView">
+        <attr name="color" format="color" />
+        <attr name="stopColor" format="color"></attr>
+        <attr name="image" format="reference"/>
+        <attr name="stroke" format="boolean" />
+        <attr name="waveCreateSpeed" format="integer" />
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+</resources>
