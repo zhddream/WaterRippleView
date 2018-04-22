@@ -11,7 +11,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 
 
-import com.zhd.admin.androldlrden.L;
+import com.zhd.admin.androldlrden.util.L;
 import com.zhd.admin.androldlrden.R;
 
 import java.util.ArrayList;
