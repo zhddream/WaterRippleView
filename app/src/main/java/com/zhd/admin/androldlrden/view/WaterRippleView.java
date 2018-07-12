@@ -10,8 +10,6 @@ import android.util.AttributeSet;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 
-
-import com.zhd.admin.androldlrden.util.L;
 import com.zhd.admin.androldlrden.R;
 
 import java.util.ArrayList;
@@ -99,8 +97,6 @@ public class WaterRippleView extends android.support.v7.widget.AppCompatTextView
     private ValueAnimator createAnimator() {
         ValueAnimator animator = new ValueAnimator();
         animator.setFloatValues(mWaveRadiusMin, mWaveRadiusMax);
-        L.d("mWaveRadiusMin", mWaveRadiusMin + "");
-        L.d("mWaveRadiusMax", mWaveRadiusMax + "");
         animator.setDuration(mWaveDuration);
         animator.setRepeatCount(-1);
         animator.setInterpolator(mInterpolator);
@@ -125,7 +121,6 @@ public class WaterRippleView extends android.support.v7.widget.AppCompatTextView
                 for (ValueAnimator mAnimator : mAnimators) {
                     if (mAnimator != null) {
                         float animatorValue = (float) mAnimator.getAnimatedValue();
-                        L.d("animatorValue", "" + animatorValue);
                         //设置透明度
                         int alpha = getAlpha(animatorValue);
                         mPaint.setAlpha(alpha);
